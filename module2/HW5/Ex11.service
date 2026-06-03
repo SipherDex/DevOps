@@ -1,0 +1,10 @@
+[Unit]
+Description=Watch ~/watch directory and rename new files to .back
+
+[Service]
+ExecStart=%h/bin/watch-dir.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
