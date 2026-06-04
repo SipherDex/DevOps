@@ -1,0 +1,10 @@
+Port 3333
+ListenAddress 0.0.0.0
+
+PermitRootLogin no
+PasswordAuthentication yes
+PubkeyAuthentication yes
+KbdInteractiveAuthentication yes
+UsePAM yes
+
+Subsystem sftp /usr/lib/openssh/sftp-server
